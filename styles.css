@@ -98,6 +98,7 @@ button {
   height: 3rem;
   margin-top: 0;
   border-radius: 2rem;
+  transition: all 0.3s ease;
 
   display: flex;
   justify-content: center;
@@ -130,6 +131,7 @@ button {
   height: 3rem;
   margin-top: 0;
   border-radius: 2rem;
+  transition: all 0.3s ease;
 
   display: flex;
   justify-content: center;
@@ -165,6 +167,7 @@ button {
   height: 3rem;
   margin-top: 0;
   border-radius: 2rem;
+  transition: all 0.3s ease;
 
   display: flex;
   justify-content: center;
@@ -194,14 +197,17 @@ button {
 
 .sedan-btn p:hover {
   color: var(--text-transparent-White);
+  transition: all 0.3s ease;
 }
 
 .suvs-btn p:hover {
   color: var(--text-transparent-White);
+  transition: all 0.3s ease;
 }
 
 .luxury-btn p:hover {
   color: var(--text-transparent-White);
+  transition: all 0.3s ease;
 }
 
 /* ---------- /Main Buttons---------- */
@@ -211,7 +217,7 @@ button {
   /* ---------- Main Container ---------- */
   .container {
     height: auto;
-    width: 65%;
+    width: 60rem;
     margin: 0;
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr 1fr;
