@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* ---------- Global ---------- */
+
+:root {
+  /* Text Colors */
+  --text-verylight-Gray: hsl(0, 0%, 95%);
+  --text-transparent-White: hsla(0, 0%, 100%, 0.75);
+  --text-bright-Orange: hsl(31, 77%, 52%);
+  --text-dark-Cyan: hsl(184, 100%, 22%);
+  --text-verydark-Cyan: hsl(179, 100%, 13%);
+  /* Background Colors */
+  --bg-verylight-Gray: hsl(0, 0%, 95%);
+  --bg-bright-Orange: hsl(31, 77%, 52%);
+  --bg-dark-Cyan: hsl(184, 100%, 22%);
+  --bg-verydark-Cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: var(--text-verylight-Gray);
+  font-size: 2.25rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-transparent-White);
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+button {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+/* ---------- Global ---------- */
+
+/* ---------- Main Container ---------- */
+
+.main {
+  background-color: var(--bg-verylight-Gray);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  height: auto;
+  width: 20rem;
+  margin: 5rem 0;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#card {
+  padding: 2rem 3rem;
+}
+
+/* ---------- /Main Container ---------- */
+
+/* ---------- Main Sedans ---------- */
+
+.main-sedans {
+  background-color: var(--bg-bright-Orange);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.sedan-icon {
+  margin-top: 1rem;
+}
+
+.main-sedans h1 {
+  margin-top: 2rem;
+}
+
+.main-sedans p {
+  margin-top: 2rem;
+}
+
+.sedan-btn p {
+  color: var(--text-bright-Orange);
+
+  width: 9rem;
+  height: 3rem;
+  margin-top: 0;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- /Main Sedans ---------- */
+
+/* ---------- Main Suvs ---------- */
+
+.main-suvs {
+  background-color: var(--bg-dark-Cyan);
+}
+
+.suvs-icon {
+  margin-top: 1rem;
+}
+
+.main-suvs h1 {
+  margin-top: 2rem;
+}
+
+.main-suvs p {
+  margin-top: 2rem;
+}
+
+.suvs-btn p {
+  color: var(--text-dark-Cyan);
+  width: 9rem;
+  height: 3rem;
+  margin-top: 0;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- /Main Suvs ---------- */
+
+/* ---------- Main Luxury ---------- */
+
+.main-luxury {
+  background-color: var(--bg-verydark-Cyan);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.luxury-icon {
+  margin-top: 1rem;
+}
+
+.main-luxury h1 {
+  margin-top: 2rem;
+}
+
+.main-luxury p {
+  margin-top: 2rem;
+}
+
+.luxury-btn p {
+  color: var(--text-dark-Cyan);
+
+  width: 9rem;
+  height: 3rem;
+  margin-top: 0;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Main Luxury ---------- */
+
+/* ---------- Main Buttons---------- */
+
+#button {
+  background-color: var(--bg-verylight-Gray);
+
+  width: 9rem;
+  height: 3rem;
+  margin: 1.5rem 0;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+#button:hover {
+  background-color: transparent;
+  outline: 0.1rem solid var(--bg-verylight-Gray);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sedan-btn p:hover {
+  color: var(--text-transparent-White);
+}
+
+.suvs-btn p:hover {
+  color: var(--text-transparent-White);
+}
+
+.luxury-btn p:hover {
+  color: var(--text-transparent-White);
+}
+
+/* ---------- /Main Buttons---------- */
+
+/* DESKTOP CSS */
+@media (min-width: 1440px) {
+  /* ---------- Main Container ---------- */
+  .container {
+    height: auto;
+    width: 65%;
+    margin: 0;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #card {
+    padding: 2rem 3.2rem;
+  }
+  /* ---------- /Main Container ---------- */
+
+  /* ---------- Main Sedans ---------- */
+
+  .main-sedans {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  /* ---------- /Main Sedans ---------- */
+
+  /* ---------- /Main Luxury ---------- */
+
+  .main-luxury {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+
+    border-top-right-radius: 0.5rem;
+  }
+
+  /* ---------- /Main Luxury ---------- */
+
+  /* ---------- Main Buttons---------- */
+
+  #button {
+    margin: 5rem 0 1rem 0;
+  }
+
+  /* ---------- /Main Buttons---------- */
+}
