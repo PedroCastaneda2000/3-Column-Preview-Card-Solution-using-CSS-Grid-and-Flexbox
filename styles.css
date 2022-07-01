@@ -24,7 +24,7 @@
 
 h1 {
   color: var(--text-verylight-Gray);
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-family: "Big Shoulders Display", sans-serif;
   font-weight: 700;
 }
@@ -37,10 +37,12 @@ p {
   line-height: 1.5rem;
 }
 
-button {
-  background: transparent;
-  border: none;
+a {
   text-decoration: none;
+
+  background-color: white;
+  width: 9rem;
+  height: 3rem;
 }
 
 /* ---------- Global ---------- */
@@ -66,7 +68,7 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-#card {
+.card {
   padding: 2rem 3rem;
 }
 
@@ -89,7 +91,7 @@ button {
 }
 
 .main-sedans p {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .sedan-btn p {
@@ -99,7 +101,7 @@ button {
   height: 3rem;
   margin-top: 0;
   border-radius: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   display: flex;
   justify-content: center;
@@ -132,7 +134,7 @@ button {
   height: 3rem;
   margin-top: 0;
   border-radius: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   display: flex;
   justify-content: center;
@@ -168,7 +170,7 @@ button {
   height: 3rem;
   margin-top: 0;
   border-radius: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   display: flex;
   justify-content: center;
@@ -179,36 +181,37 @@ button {
 
 /* ---------- Main Buttons---------- */
 
-#button {
-  background-color: var(--bg-verylight-Gray);
+.button {
+  background: var(--bg-verylight-Gray);
+  outline: 0.1rem solid var(--bg-verylight-Gray);
+  overflow: hidden;
 
   width: 9rem;
   height: 3rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0.75rem 0;
   border-radius: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
-#button:hover {
+.button:hover {
   background-color: transparent;
-  outline: 0.1rem solid var(--bg-verylight-Gray);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .sedan-btn p:hover {
   color: var(--text-transparent-White);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .suvs-btn p:hover {
   color: var(--text-transparent-White);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .luxury-btn p:hover {
   color: var(--text-transparent-White);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 /* ---------- /Main Buttons---------- */
@@ -218,14 +221,14 @@ button {
   /* ---------- Main Container ---------- */
   .container {
     height: auto;
-    width: 60rem;
+    width: 58rem;
     margin: 0;
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #card {
-    padding: 2rem 3.2rem;
+  .card {
+    padding: 2rem 3.1rem;
   }
   /* ---------- /Main Container ---------- */
 
@@ -253,8 +256,8 @@ button {
 
   /* ---------- Main Buttons---------- */
 
-  #button {
-    margin: 5rem 0 1rem 0;
+  .button {
+    margin: 4.5rem 0 1rem 0;
   }
 
   /* ---------- /Main Buttons---------- */
